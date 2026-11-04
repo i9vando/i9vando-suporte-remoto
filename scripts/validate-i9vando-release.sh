@@ -11,6 +11,10 @@ fi
 
 grep -q 'remoto.i9vando.com.br' "$config_file"
 grep -q 'I9VANDO' "$config_file"
+grep -q 'ProductName = "I9VANDO Suporte Remoto"' "$root_dir/Cargo.toml"
+grep -q 'ProductName = "I9VANDO Suporte Remoto"' "$root_dir/libs/portable/Cargo.toml"
+grep -q 'CompanyName", "Inovando Tecnologia Ltda.' "$root_dir/flutter/windows/runner/Runner.rc"
+grep -q '^Name=I9VANDO Suporte Remoto$' "$root_dir/res/rustdesk.desktop"
 test -s "$root_dir/res/icon.png"
 test -s "$root_dir/res/mac-icon.png"
 

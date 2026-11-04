@@ -7,6 +7,18 @@ on:
         description: "Tag de homologação ou publicação"
         required: true
         default: "i9vando-homologacao"
+      build_windows:
+        description: "Gerar Windows x64"
+        type: boolean
+        default: true
+      build_macos:
+        description: "Gerar macOS Intel e Apple Silicon"
+        type: boolean
+        default: true
+      build_linux:
+        description: "Gerar Linux x64 (.deb e .rpm)"
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -29,4 +41,7 @@ jobs:
       upload-artifact: true
       upload-tag: ${{ inputs.release_tag }}
       publish-update-metadata: false
+      build_windows: ${{ inputs.build_windows }}
+      build_macos: ${{ inputs.build_macos }}
+      build_linux: ${{ inputs.build_linux }}
     secrets: inherit
