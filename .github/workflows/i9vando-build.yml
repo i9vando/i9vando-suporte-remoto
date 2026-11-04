@@ -1,0 +1,32 @@
+name: Gerar aplicativos I9VANDO
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Tag de homologação ou publicação"
+        required: true
+        default: "i9vando-homologacao"
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          submodules: recursive
+      - name: Validar configuração I9VANDO
+        run: ./scripts/validate-i9vando-release.sh
+
+  compilar:
+    needs: validar
+    uses: ./.github/workflows/flutter-build.yml
+    with:
+      upload-artifact: true
+      upload-tag: ${{ inputs.release_tag }}
+      publish-update-metadata: false
+    secrets: inherit
