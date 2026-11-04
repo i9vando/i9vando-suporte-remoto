@@ -19,6 +19,14 @@ on:
         description: "Gerar Linux x64 (.deb e .rpm)"
         type: boolean
         default: true
+      build_android:
+        description: "Gerar Android (APK universal)"
+        type: boolean
+        default: false
+      build_ios:
+        description: "Gerar iOS (IPA sem assinatura Apple)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -44,4 +52,6 @@ jobs:
       build_windows: ${{ inputs.build_windows }}
       build_macos: ${{ inputs.build_macos }}
       build_linux: ${{ inputs.build_linux }}
+      build_android: ${{ inputs.build_android }}
+      build_ios: ${{ inputs.build_ios }}
     secrets: inherit
