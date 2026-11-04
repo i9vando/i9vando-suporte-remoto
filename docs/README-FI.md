@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../res/logo-header.svg" alt="RustDesk - Etätyöpöytäsi"><br>
+  <img src="../res/logo-header.png" alt="I9VANDO Suporte Remoto"><br>
   <a href="#free-public-servers">Palvelimet</a> •
   <a href="#raw-steps-to-build">Rakenna</a> •
   <a href="#how-to-build-with-docker">Docker</a> •

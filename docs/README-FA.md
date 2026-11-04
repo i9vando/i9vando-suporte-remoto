@@ -1,5 +1,5 @@
 <p dir="rtl" align="center">
-  <img src="../res/logo-header.svg" alt="RustDesk - Your remote desktop"><br>
+  <img src="../res/logo-header.png" alt="I9VANDO Suporte Remoto"><br>
   <a href="#تصاویر-محیط-نرم افزار">تصاویر محیط نرم‌افزار</a> •
   <a href="#ساختار-پوشه-ها">ساختار</a> •
   <a href="#نحوه-ساخت-با-داکر">داکر</a> •

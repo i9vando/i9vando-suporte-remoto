@@ -3738,12 +3738,13 @@ Widget loadPowered(BuildContext context) {
     cursor: SystemMouseCursors.click,
     child: GestureDetector(
       onTap: () {
-        launchUrl(Uri.parse('https://rustdesk.com'));
+        launchUrl(Uri.parse(
+            'https://github.com/i9vando/i9vando-suporte-remoto'));
       },
       child: Opacity(
           opacity: 0.5,
           child: Text(
-            translate("powered_by_me"),
+            'Baseado em RustDesk OSS',
             overflow: TextOverflow.clip,
             style: Theme.of(context)
                 .textTheme
@@ -3825,11 +3826,7 @@ Widget loadIcon(double size) {
   return Image.asset('assets/icon.png',
       width: size,
       height: size,
-      errorBuilder: (ctx, error, stackTrace) => SvgPicture.asset(
-            'assets/icon.svg',
-            width: size,
-            height: size,
-          ));
+      errorBuilder: (ctx, error, stackTrace) => const SizedBox.shrink());
 }
 
 var imcomingOnlyHomeSize = Size(280, 300);

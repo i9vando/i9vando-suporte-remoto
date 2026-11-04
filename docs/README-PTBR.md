@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../res/logo-header.svg" alt="RustDesk - Seu desktop remoto"><br>
+  <img src="../res/logo-header.png" alt="I9VANDO Suporte Remoto"><br>
   <a href="#compilar">Compilar</a> •
   <a href="#como-compilar-com-o-docker">Docker</a> •
   <a href="#estrutura-de-arquivos">Estrutura</a> •

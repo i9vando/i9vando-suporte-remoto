@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../res/logo-header.svg" alt="RustDesk - Ваш віддалений робочий стіл"><br>
+  <img src="../res/logo-header.png" alt="I9VANDO Suporte Remoto"><br>
   <a href="#кроки-для-збірки">Збірка</a> •
   <a href="#як-зібрати-за-допомогою-docker">Docker</a> •
   <a href="#структура-файлів">Структура</a> •

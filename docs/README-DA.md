@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../res/logo-header.svg" alt="RustDesk - Your remote desktop"><br>
+  <img src="../res/logo-header.png" alt="I9VANDO Suporte Remoto"><br>
   <a href="#gratis-offentlige-servere">Servere</a> •
   <a href="#rå-trin-til-at-bygge">Byg</a> •
   <a href="#sådan-bygger-du-med-docker">Docker</a> •
