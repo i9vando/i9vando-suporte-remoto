@@ -257,6 +257,7 @@ webrtc-sctp = { git = "https://github.com/rustdesk-org/webrtc", rev = "49c89bd8d
 
 [package.metadata.winres]
 LegalCopyright = "Copyright © 2026 Inovando Tecnologia Ltda. Baseado em RustDesk OSS."
+CompanyName = "Inovando Tecnologia Ltda."
 ProductName = "I9VANDO Suporte Remoto"
 FileDescription = "I9VANDO Suporte Remoto"
 OriginalFilename = "I9VANDO-Suporte-Remoto.exe"
